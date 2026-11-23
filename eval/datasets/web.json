@@ -1,0 +1,58 @@
+[
+  {
+    "inputs": {
+      "question": "Search the web for what is in the news on Weichai Power this week."
+    },
+    "expectations": {
+      "expected_tools": [
+        "web_search"
+      ],
+      "group": "web_live"
+    },
+    "tags": {
+      "group": "web_live"
+    }
+  },
+  {
+    "inputs": {
+      "question": "Search the web: any recent headlines on Kioxia and its NAND business?"
+    },
+    "expectations": {
+      "expected_tools": [
+        "web_search"
+      ],
+      "group": "web_live"
+    },
+    "tags": {
+      "group": "web_live"
+    }
+  },
+  {
+    "inputs": {
+      "question": "Use web search to find the latest on Haitian International."
+    },
+    "expectations": {
+      "expected_tools": [
+        "web_search"
+      ],
+      "group": "web_live"
+    },
+    "tags": {
+      "group": "web_live"
+    }
+  },
+  {
+    "inputs": {
+      "question": "Search the web for news on Weichai Power's third-quarter results."
+    },
+    "expectations": {
+      "expected_tools": [
+        "web_search"
+      ],
+      "group": "web_live"
+    },
+    "tags": {
+      "group": "web_live"
+    }
+  }
+]

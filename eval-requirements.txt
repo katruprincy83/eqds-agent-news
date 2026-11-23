@@ -1,0 +1,6 @@
+mlflow[databricks]==3.18.0
+databricks-agents
+databricks-sdk
+httpx
+pyyaml
+pydantic

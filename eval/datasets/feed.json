@@ -1,0 +1,270 @@
+[
+  {
+    "inputs": {
+      "question": "What is the latest news on Kioxia Holdings?"
+    },
+    "expectations": {
+      "expected_tools": [
+        "news_latest"
+      ],
+      "group": "latest_company",
+      "expected_facts": [
+        "The most recent headline for Kioxia Holdings is 'Kioxia Holdings says pricing is stable', dated 2026-11-08"
+      ]
+    },
+    "tags": {
+      "group": "latest_company",
+      "company_id": "C0101"
+    }
+  },
+  {
+    "inputs": {
+      "question": "Any recent headlines on Weichai Power A? What is the newest one?"
+    },
+    "expectations": {
+      "expected_tools": [
+        "news_latest"
+      ],
+      "group": "latest_company",
+      "expected_facts": [
+        "The most recent headline for Weichai Power A is 'Weichai Power A says demand remains resilient', dated 2026-11-14"
+      ]
+    },
+    "tags": {
+      "group": "latest_company",
+      "company_id": "C0102"
+    }
+  },
+  {
+    "inputs": {
+      "question": "What is in the news for JD Health?"
+    },
+    "expectations": {
+      "expected_tools": [
+        "news_latest"
+      ],
+      "group": "latest_company",
+      "expected_facts": [
+        "The most recent headline for JD Health is 'JD Health reports weaker margin outlook', dated 2026-11-19"
+      ]
+    },
+    "tags": {
+      "group": "latest_company",
+      "company_id": "C0103"
+    }
+  },
+  {
+    "inputs": {
+      "question": "What is the latest news on Laurus Labs?"
+    },
+    "expectations": {
+      "expected_tools": [
+        "news_latest"
+      ],
+      "group": "latest_company",
+      "expected_facts": [
+        "The most recent headline for Laurus Labs is 'Laurus Labs flags slowing demand in export markets', dated 2026-11-11"
+      ]
+    },
+    "tags": {
+      "group": "latest_company",
+      "company_id": "C0104"
+    }
+  },
+  {
+    "inputs": {
+      "question": "Any recent headlines on Adani Energy Solutions? What is the newest one?"
+    },
+    "expectations": {
+      "expected_tools": [
+        "news_latest"
+      ],
+      "group": "latest_company",
+      "expected_facts": [
+        "The most recent headline for Adani Energy Solutions is 'Adani Energy Solutions reports capacity expansion plan', dated 2026-11-19"
+      ]
+    },
+    "tags": {
+      "group": "latest_company",
+      "company_id": "C0105"
+    }
+  },
+  {
+    "inputs": {
+      "question": "What is in the news for Haitian International?"
+    },
+    "expectations": {
+      "expected_tools": [
+        "news_latest"
+      ],
+      "group": "latest_company",
+      "expected_facts": [
+        "The most recent headline for Haitian International is 'Haitian International wins strategic partnership', dated 2026-11-20"
+      ]
+    },
+    "tags": {
+      "group": "latest_company",
+      "company_id": "C0106"
+    }
+  },
+  {
+    "inputs": {
+      "question": "What is the latest news on China Resources Beer?"
+    },
+    "expectations": {
+      "expected_tools": [
+        "news_latest"
+      ],
+      "group": "latest_company",
+      "expected_facts": [
+        "The most recent headline for China Resources Beer is 'China Resources Beer says pricing is stable', dated 2026-11-04"
+      ]
+    },
+    "tags": {
+      "group": "latest_company",
+      "company_id": "C0107"
+    }
+  },
+  {
+    "inputs": {
+      "question": "Any recent headlines on Komatsu? What is the newest one?"
+    },
+    "expectations": {
+      "expected_tools": [
+        "news_latest"
+      ],
+      "group": "latest_company",
+      "expected_facts": [
+        "The most recent headline for Komatsu is 'Komatsu flags slowing demand in export markets', dated 2026-11-13"
+      ]
+    },
+    "tags": {
+      "group": "latest_company",
+      "company_id": "C0108"
+    }
+  },
+  {
+    "inputs": {
+      "question": "What is in the news for Resonac Holdings?"
+    },
+    "expectations": {
+      "expected_tools": [
+        "news_latest"
+      ],
+      "group": "latest_company",
+      "expected_facts": [
+        "The most recent headline for Resonac Holdings is 'Resonac Holdings: analysts trim targets ahead of results', dated 2026-11-15"
+      ]
+    },
+    "tags": {
+      "group": "latest_company",
+      "company_id": "C0110"
+    }
+  },
+  {
+    "inputs": {
+      "question": "What did Kioxia say about NAND capacity recently?"
+    },
+    "expectations": {
+      "expected_tools": [
+        "news_latest"
+      ],
+      "group": "named_headline",
+      "expected_facts": [
+        "A Meridian Newswire headline dated 2026-10-28 reports Kioxia's executive saying NAND capacity is sold out through 2027"
+      ]
+    },
+    "tags": {
+      "group": "named_headline",
+      "company_id": "C0101"
+    }
+  },
+  {
+    "inputs": {
+      "question": "Compare the newest headlines for Kioxia Holdings and Weichai Power A."
+    },
+    "expectations": {
+      "expected_tools": [
+        "news_latest"
+      ],
+      "group": "comparison",
+      "expected_facts": [
+        "The newest Kioxia Holdings headline is 'Kioxia Holdings says pricing is stable', dated 2026-11-08",
+        "The newest Weichai Power A headline is 'Weichai Power A says demand remains resilient', dated 2026-11-14"
+      ]
+    },
+    "tags": {
+      "group": "comparison"
+    }
+  },
+  {
+    "inputs": {
+      "question": "Has there been any news on Weichai Power A in the last 48 hours?"
+    },
+    "expectations": {
+      "expected_tools": [
+        "news_latest"
+      ],
+      "group": "time_window",
+      "expected_facts": [
+        "States that no headlines were found in the last 48 hours",
+        "The most recent Weichai Power A headline is older, dated 2026-11-14"
+      ]
+    },
+    "tags": {
+      "group": "time_window",
+      "company_id": "C0102"
+    }
+  },
+  {
+    "inputs": {
+      "question": "What is the latest news on Acme Quantum Holdings?"
+    },
+    "expectations": {
+      "expected_tools": [
+        "company_lookup"
+      ],
+      "group": "gap_unknown_company",
+      "expected_facts": [
+        "States that the company could not be found or has no news, and does not invent headlines"
+      ]
+    },
+    "tags": {
+      "group": "gap_unknown_company"
+    }
+  },
+  {
+    "inputs": {
+      "question": "What is Kioxia's price target and forward P/E?"
+    },
+    "expectations": {
+      "expected_tools": [],
+      "group": "gap_out_of_scope",
+      "expected_facts": [
+        "States that headlines do not contain a price target or valuation, and does not make one up"
+      ]
+    },
+    "tags": {
+      "group": "gap_out_of_scope",
+      "company_id": "C0101"
+    }
+  },
+  {
+    "inputs": {
+      "question": "Is a US ruling on Chinese power equipment expected, and what does it mean for Weichai?"
+    },
+    "expectations": {
+      "expected_tools": [
+        "news_latest"
+      ],
+      "group": "gap_not_in_feed",
+      "expected_facts": [
+        "States that the news feed does not confirm a US ruling, and does not present a ruling or date as fact"
+      ]
+    },
+    "tags": {
+      "group": "gap_not_in_feed",
+      "company_id": "C0102"
+    }
+  }
+]
