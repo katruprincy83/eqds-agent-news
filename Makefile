@@ -5,17 +5,21 @@ TARGET ?= demo
 PY ?= python3
 Q ?=
 
-.PHONY: build deploy smoke eval-setup eval-dataset eval
+.PHONY: build deploy smoke traces eval-setup eval-dataset eval
 
 build:
 	$(PY) scripts/build.py --platform $(PLATFORM) --target $(TARGET)
 
 deploy: build
 	databricks bundle deploy -t $(TARGET)
+	$(PY) scripts/bind_traces.py --platform $(PLATFORM) --target $(TARGET)
 	databricks bundle run -t $(TARGET) news
 
+traces:
+	$(PY) scripts/bind_traces.py --platform $(PLATFORM) --target $(TARGET)
+
 smoke:
-	$(PY) scripts/smoke.py $(if $(Q),--invoke "$(Q)")
+	$(PY) scripts/smoke.py --target $(TARGET) $(if $(Q),--invoke "$(Q)")
 
 # MLflow agent evaluation (experiment /Shared/eqds/eval/news-<target>): see eval/README.md
 EVALPY ?= .venv/bin/python
