@@ -14,15 +14,16 @@ skill:
   name: news
   version: 0.8.0
 tools:
-- type: bridge_mcp
+- type: external
   allow:
   - news_latest
   - web_search
 - type: uc_functions
   allow:
   - company_lookup
-tools_summary: Bridge MCP · news_latest, web_search (live)
+tools_summary: External data · news_latest, web_search (live)
 access:
+  foreign: true               # reads the federated catalog (news_wire, web_index) under this app's own grants
   tables:
   - ref_companies
   functions:
@@ -30,7 +31,6 @@ access:
   volumes:
   - skills
   - prompts
-uses_bridge: true
 max_tool_calls: 6
 timeout_s: 150
 contract_version: '1'
